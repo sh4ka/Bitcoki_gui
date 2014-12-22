@@ -1,0 +1,82 @@
+<link rel="import" href="../bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
+<link rel="import" href="../bower_components/core-input/core-input.html">
+<link rel="import" href="../bower_components/core-field/core-field.html">
+<link rel="import" href="../bower_components/core-icon/core-icon.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+ 
+<polymer-element name="my-element">
+ 
+  <template>
+    <style>    
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #core_header_panel {
+        width: 300px;
+        height: 400px;
+        left: 410px;
+        top: 60px;
+        position: absolute;
+      }
+      #core_toolbar {
+        background-color: rgb(79, 125, 201);
+        color: rgb(255, 255, 255);
+      }
+      #section {
+        height: 1000px;
+        background-image: linear-gradient(rgb(214, 227, 231), rgb(173, 216, 230));
+      }
+      #input {
+        padding: 15px;
+        left: 10px;
+        top: 56px;
+        position: absolute;
+      }
+      #input1 {
+        padding: 15px;
+        left: 10px;
+        top: 136px;
+        position: absolute;
+      }
+      #core_field {
+        left: 30px;
+        top: 266px;
+        position: absolute;
+      }
+      #paper_button {
+        left: 13px;
+        top: 226px;
+        position: absolute;
+        background-color: rgb(20, 204, 16);
+      }
+    </style>
+    <core-header-panel mode="standard" id="core_header_panel">
+      <core-toolbar id="core_toolbar">
+        <core-icon-button icon="menu" id="core_icon_button"></core-icon-button>
+        <div id="div">Bitcoin alert system</div>
+      </core-toolbar>
+      <section id="section">
+        <input id="input" placeholder="Min" is="core-input">
+        <input id="input1" placeholder="Max" is="core-input">
+        <core-field id="core_field" icon="search" theme="core-light-theme" center horizontal layout>
+          <core-input id="core_input" flex></core-input>
+        </core-field>
+        <paper-button id="paper_button">Add alert</paper-button>
+      </section>
+    </core-header-panel>
+  </template>
+ 
+  <script>
+
+    Polymer({
+      
+    });
+
+  </script>
+ 
+</polymer-element>

@@ -1,0 +1,19 @@
+{
+  "name": "bitcoki_gui",
+  "version": "0.0.1",
+  "authors": [
+    "Jesús Flores <jesus.flores@bqreaders.com>"
+  ],
+  "description": "Bitcoki client",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2"
+  }
+}
